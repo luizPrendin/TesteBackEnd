@@ -4,6 +4,10 @@
     {
         static void Main(string[] args)
         {
+            
+
+            initPrograma();
+
             void initPrograma()
             {
                 Console.WriteLine("Inicio do programa");
@@ -13,10 +17,8 @@
                 Console.WriteLine("Informe o comprimento do tabuleiro:");
                 Console.Write("R: ");
                 int comprimento = int.Parse(Console.ReadLine());
-                verificaQtdReisPossiveis(largura,comprimento);
+                verificaQtdReisPossiveis(largura, comprimento);
             }
-
-            initPrograma(); 
 
             void verificaQtdReisPossiveis(int largura,int comprimento)
             {
@@ -24,7 +26,9 @@
 
                 if (largura>0 && comprimento > 0)
                 {
-                    
+                    /*acada impar em uma direçao é um rei add e 
+                    quando é mais um impar nas duas direções são dois reis add                    
+                     */
                     int resul = 0;
                     for (int i = 0; i < comprimento; i++) { 
                         for (int x = 0; x < largura; x++)
@@ -40,12 +44,7 @@
                             
                     }
                     Console.WriteLine(resul);
-                    /*acada impar em uma direçao é um rei add e 
-                    quando é mais um impar nas duas direções são dois reis add
                     
-                    obs: ver o desenho do paint;
-                     
-                     */
                 }
 
 

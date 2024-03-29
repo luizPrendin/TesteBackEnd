@@ -6,9 +6,11 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-
+        //iniciando a variavel referente ao numero de testes
         int N = 0;
-        Dictionary<int,string> frases = new Dictionary<int,string>();        
+        //Dicionario referentes aos casos 
+        Dictionary<int,string> frases = new Dictionary<int,string>();
+        
         List<string> vogais = ["a", "á", "à", "e", "é", "è", "i"," í","ì","o","ó","ò","u","ú","ù"];
 
         void InicioPrograma()
@@ -90,7 +92,7 @@ internal class Program
 
                     if (c != "?" && c != "!" && c != ",")
                     {
-                        //numConsoantes += 1;
+                       
 
                         foreach (string j in vogais)
                         {

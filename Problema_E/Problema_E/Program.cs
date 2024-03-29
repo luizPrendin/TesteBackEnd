@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            //Dicionario responsavel por armazenar os numeros verificados
             Dictionary<int,string> numero = new Dictionary<int,string>();
 
             void iniciaPrograma()
@@ -24,10 +25,10 @@
                 if (andar > 0 && andar <=1018)
                 {
                     string n= andar.ToString();
-                    //string[] digitos = new string[n.Length];
+                    
                     for (int x = 0; x <n.Length; x++)
                     {
-                        //digitos[x] = n[x].ToString();
+
                         numero.Add(x,n[x].ToString());
                     }
                     string andarDeterminado = "";

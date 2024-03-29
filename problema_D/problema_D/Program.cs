@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+           //iniciando variavel correspondente ao numero de participantes
            int N = 0;
            List<int> participantesLargada = new List<int>();
            List<int> participantesChegada = new List<int>();
@@ -78,16 +79,6 @@
 
                 }
 
-                /*for(int z =0; z< participantesLargada.ToArray().Length;z++) {
-
-                    if (participantesLargada[z] == participantesChegada[z])
-                    {
-
-                        numtrocas+=1;
-
-                    }
-                
-                }*/
                 return numtrocas;
             
             

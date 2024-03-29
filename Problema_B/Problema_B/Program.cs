@@ -5,6 +5,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
+        //Dicionario de variaveis referente as aturas minimas
         Dictionary<int, int> AlturasMin = new();
         //Variavel referente a altura do jovem
         int H = 0;
